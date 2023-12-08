@@ -4,7 +4,7 @@ import PySimpleGUI as sg
 from collections import Counter
 from Funções import *
 
-#Pré
+
 df = pd.read_excel("/home/weslem/Documentos/BasedeCasosdeDoençasdoSoja.xlsx")
 banco = sqlite3.connect('banco.db')
 cursor = banco.cursor()
@@ -19,7 +19,7 @@ valor = ''
 num = 0
 janelaP, janelaS, janelaF = janelaInicial(), None, None
 
-#Pós
+
 while True:
     janela, eventos, valores = sg.read_all_windows()
     if eventos == 'areaDamaged':
